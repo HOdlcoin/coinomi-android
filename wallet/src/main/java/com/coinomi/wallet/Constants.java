@@ -217,9 +217,7 @@ public class Constants {
             new CoinAddress(IxcoinMain.get(),       new ServerAddress("ixc-cce-1.coinomi.net", 5047),
                                                     new ServerAddress("ixc-cce-2.coinomi.net", 5047)),
             new CoinAddress(HodlcoinMain.get(),     new ServerAddress("cce.hodlcoin.com", 17989),
-                                                    new ServerAddress("hodlcce.amit177.cf", 17989),
-                                                    new ServerAddress("hodl-cce-1.coinomi.net", 5989),
-                                                    new ServerAddress("hodl-cce-2.coinomi.net", 5990))
+                                                    new ServerAddress("hodlcce.amit.systems", 17989))
                                                     
         
     );

@@ -504,17 +504,17 @@ public class TransactionCreator {
             default:
                 throw new RuntimeException("Unknown fee policy: " + coinType.getFeePolicy());
         }
-        output.setValue(output.getValue().subtract(fee));
+        output.subtract(fee);
         // Check if we need additional fee due to the output's value
         if (output.getValue().compareTo(softDustLimit) < 0) {
             switch (coinType.getSoftDustPolicy()) {
                 case AT_LEAST_BASE_FEE_IF_SOFT_DUST_TXO_PRESENT:
                     if (fee.compareTo(feePerTxSize) < 0) {
-                        output.setValue(output.getValue().subtract(feePerTxSize.subtract(fee)));
+                        output.subtract(feePerTxSize.subtract(fee));
                     }
                     break;
                 case BASE_FEE_FOR_EACH_SOFT_DUST_TXO:
-                    output.setValue(output.getValue().subtract(feePerTxSize));
+                    output.subtract(feePerTxSize);
                     break;
                 case NO_POLICY:
                     break;

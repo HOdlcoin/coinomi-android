@@ -136,7 +136,7 @@ public class TransactionCreator {
                 CoinSelector selector = req.coinSelector == null ? coinSelector : req.coinSelector;
                 bestCoinSelection = selector.select(NetworkParameters.MAX_MONEY, candidates);
                 candidates = null;  // Selector took ownership and might have changed candidates. Don't access again.
-                tx.getOutput(0).setValue(bestCoinSelection.valueGathered);
+                tx.getOutput(0).setValueBeforeInterest(bestCoinSelection.valueGathered);
                 log.info("  emptying {}", bestCoinSelection.valueGathered.toFriendlyString());
             }
 

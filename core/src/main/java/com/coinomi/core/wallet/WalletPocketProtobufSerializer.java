@@ -203,7 +203,7 @@ public class WalletPocketProtobufSerializer {
             }
             Protos.TransactionOutput.Builder outputBuilder = Protos.TransactionOutput.newBuilder()
                     .setScriptBytes(ByteString.copyFrom(output.getScriptBytes()))
-                    .setValue(output.getValue().value);
+                    .setValueBeforeInterest(output.getValue().value);
             if (!output.isAvailableForSpending()) {
                 outputBuilder.setIsSpent(true);
             }

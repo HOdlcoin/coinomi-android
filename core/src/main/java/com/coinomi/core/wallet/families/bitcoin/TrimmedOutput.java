@@ -18,13 +18,13 @@ public class TrimmedOutput extends TransactionOutput {
     final long index;
 
     public TrimmedOutput(TransactionOutput output, long index, TrimmedTransaction tx) {
-        super(output.getParams(), checkNotNull(tx), output.value, output.getScriptBytes());
+        super(output.getParams(), checkNotNull(tx), output.getValueNoInterest(), output.getScriptBytes());
         this.index = index;
         this.txHash = null;
     }
 
     public TrimmedOutput(TransactionOutput output, long index, Sha256Hash txHash) {
-        super(output.getParams(), null, output.value, output.getScriptBytes());
+        super(output.getParams(), null, output.getValueNoInterest(), output.getScriptBytes());
         this.index = index;
         this.txHash = txHash;
     }

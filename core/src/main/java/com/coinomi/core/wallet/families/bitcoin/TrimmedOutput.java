@@ -24,7 +24,7 @@ public class TrimmedOutput extends TransactionOutput {
     }
 
     public TrimmedOutput(TransactionOutput output, long index, Sha256Hash txHash) {
-        super(output.getParams(), null, output.getValueWithInterest(), output.getScriptBytes());
+        super(output.getParams(), null, output.getValueNoInterest(), output.getScriptBytes());
         this.index = index;
         this.txHash = txHash;
     }

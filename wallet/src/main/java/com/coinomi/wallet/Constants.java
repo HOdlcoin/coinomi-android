@@ -153,6 +153,6 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            HodlcoinMain.get(),        
+            HodlcoinMain.get()       
     );
 }

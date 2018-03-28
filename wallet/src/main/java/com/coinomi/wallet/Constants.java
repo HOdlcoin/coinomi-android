@@ -143,7 +143,7 @@ public class Constants {
         
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
-        COINS_BLOCK_EXPLORERS.put(CoinID.HODLCOIN_MAIN.getCoinType(), "http://hodl.amit177.systems:1781/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.HODLCOIN_MAIN.getCoinType(), "http://hodl.amit.systems:1781/tx/%s");
         
     }
 

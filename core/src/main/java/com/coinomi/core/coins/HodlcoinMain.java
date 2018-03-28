@@ -20,8 +20,7 @@ public class HodlcoinMain extends BitFamily {
         uriScheme = "hodlcoin";
         bip44Index = 1989;
         unitExponent = 8;
-       // feeValue = value(50000000L);
-        feeValue = value(0);
+        feeValue = value(5000L);
         minNonDust = value(5460);
         softDustLimit = value(1000000); // 0.01 HODL
         softDustPolicy = SoftDustPolicy.AT_LEAST_BASE_FEE_IF_SOFT_DUST_TXO_PRESENT;

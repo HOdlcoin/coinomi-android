@@ -397,7 +397,7 @@ final public class WalletActivity extends BaseWalletActivity implements
                 @Override
                 protected void onPostExecute(Integer serverVersionCode) {
                     if (serverVersionCode != null && serverVersionCode > packageInfo.versionCode) {
-                        //showUpdateDialog();
+                        showUpdateDialog();
                     }
                 }
             }.execute();

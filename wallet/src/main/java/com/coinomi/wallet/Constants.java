@@ -122,9 +122,9 @@ public class Constants {
     public static final char CURRENCY_MINUS_SIGN = '-';
 
     public static final String MARKET_APP_URL = "market://details?id=%s";
-    public static final String BINARY_URL = "https://github.com/Coinomi/coinomi-android/releases";
+    public static final String BINARY_URL = "https://github.com/HOdlcoin/coinomi-android/releases/";
 
-    public static final String VERSION_URL = "https://coinomi.com/version";
+    public static final String VERSION_URL = "https://raw.githubusercontent.com/HOdlcoin/coinomi-android/master/version-check";
     public static final String SUPPORT_EMAIL = "support@coinomi.com";
 
     // TODO move to resource files
@@ -143,7 +143,7 @@ public class Constants {
         
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
-        COINS_BLOCK_EXPLORERS.put(CoinID.HODLCOIN_MAIN.getCoinType(), "http://hodl.amit.systems:1781/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.HODLCOIN_MAIN.getCoinType(), "http://hodl.amit.systems:81/tx/%s");
         
     }
 

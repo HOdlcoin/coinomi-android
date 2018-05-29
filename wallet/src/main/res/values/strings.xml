@@ -49,6 +49,7 @@
     <string name="button_disagree">Disagree</string>
     <string name="button_add_coins">+ Coins</string>
     <string name="button_execute">Execute</string>
+    <string name="button_report">Report</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="scan_qr_code">Scan QR code</string>

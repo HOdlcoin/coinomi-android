@@ -12,7 +12,7 @@ android {
         applicationId "com.coinomi.wallet.dev"
         minSdkVersion 10
         targetSdkVersion 23
-        versionCode 56
+        versionCode 100
         versionName "v1.0.0"
     }
 
